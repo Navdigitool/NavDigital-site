@@ -1,3 +1,5 @@
-h1{
-color: rgb(94, 173, 45);
+*{
+  margin: 0;
+  paddinig: 0;
+  box-sizing: border-box;
 }
