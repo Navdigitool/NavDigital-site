@@ -1,31 +1,88 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+/* Global styles */
+* {
   margin: 0;
-  paddinig: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-
-nav{
-  flex: 1;
-  text-align: right; 
+body {
+  background-color: rgb(169, 233, 233);
+  font-family: Arial;
+  font-size: 20px;
+  padding: 50px;
 }
 
-nav ul{
+h1 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.title {
+  color: rgb(6, 4, 115);
+}
+
+input,
+button {
+  padding: 10px;
+  font-size: 15px;
+}
+
+/* Navigation styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 10px 30px;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+  margin-right: 30px;
+}
+
+nav ul {
   display: inline-block;
   list-style-type: none;
 }
 
-nav ul li{
+nav ul li {
   display: inline-block;
   margin-right: 20px;
+  text-align: right;
 }
 
-a{
+/* Typography styles */
+li,
+a,
+button {
+  font-family: "montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
   text-decoration: none;
-  color: #555
 }
 
-p{
-  color: #555
+/* Specific element styles */
+#email-subscribe {
+  background-color: rgb(73, 161, 164);
+  border: 5px solid #270808;
+  width: 500px;
+  padding: 10px;
+  text-align: center;
+  margin: 70px auto 40px auto;
 }
 
+#tag-manager-picture {
+  margin-top: 40px;
+  border-radius: 20px;
+}
