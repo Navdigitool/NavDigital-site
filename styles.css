@@ -83,6 +83,21 @@ button {
 }
 
 #tag-manager-picture {
-  margin-top: 40px;
+  margin-top: 30px;
   border-radius: 20px;
+  display: block;
+  margin: 0 auto;
 }
+
+nav ul li:hover {
+  background-color: rgba(37, 119, 70, 0.5);
+  transition: background-color 0.5s ease-in-out;
+}
+
+#tag-manager-picture {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
