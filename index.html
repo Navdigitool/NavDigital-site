@@ -1,82 +1,52 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({‌
-          ‌'someVar'‌ ‌:‌ ‌'someVal',‌
-          ‌'event'‌ ‌:‌ ‌'someValue'‌
-                });
-    </script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav testing website</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    
-<link rel = "stylesheet" href="styles.css"/>
-    
- 
-    
-<script>
-    window.dataLayer = window.dataLayer || [];
-    dataLayer.push({
-    'login_status' : 'New User',
-    'category' : 'Homepage123',
-    'Commit' : 'Commit done'
-    });
-    </script>
-    
-        
+    <link rel="stylesheet" href="styles.css">
 
-
-    <!-- Google Tag Manager -->
+        <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-MVTL46F');</script>
     <!-- End Google Tag Manager -->
-   <title>Test Site</title>
-  </head>
-Form Fill Page
-  <body>
-      <!-- Google Tag Manager (noscript) -->
+</head>
+<body>
+          <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MVTL46F"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-  
-    
-    <nav>
-      <ul>
-        <li><a href="page2.html">Home</a> </li>
-        <li><a href="">Product</a> </li>
-        <li><a href="">About Us</a> </li>
-        <li><a href="contact.html">Contact us</a> </li>
-      </ul>
-    </nav>
-  
-    <h1>Homepage</h1>
-  <form action="/" method= "GET">
-    <div>
-    <label for="name">Name</label>
-    <input id="name" name="name" type="text">
-  </form>
-    </div>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li> <a href="#">Homepage</a>
+                <li> <a href="#">About Us</a>
+                <li> <a href="#">Facebook tracking</a>
+                <li> <a href="https://www.google.com">Google</a>
+                </li>
 
-    <div>
-      <label for="Password">Password</label>
-      <input id="password" name="Password" type="Password">
+            </ul>
+        </nav>
+    </header>
+    <h1 class="title"> Nav Digital
+    </h1>
+    <h2>
+        Homepage
+    </h2>
+    <p>
+     This is to go over tracking on webpages using Google Tag Manager. This makes it easier for any marketer to implement their own marketing tags.
+    </p>
+    <img id="tag-manager-picture" src="data:image/png;base64,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" alt="">
+
+    <form id="email-subscribe">
+<h3> Please fill in your email to subscribe</h2>
+<input type="Email" placeholder="Your email here">
+<button>Submit</button>
     </form>
-      </div>
-
-<h3>
-    Link to Google below
-</h3>
-
-<p> Click <a href="https://www.google.com">here</a></p>
-<p>Click here for contact page<a href="contact.html">Contact page</a>
-
- </body>
-
-
-
+</body>
 </html>
