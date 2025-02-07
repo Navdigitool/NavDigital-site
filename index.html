@@ -1,221 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Try Amazon Prime, Music Unlimited & Prime Video</title>
     <style>
-        /* General Styles */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f7f7f7;
-            color: #333;
-            text-align: center;
-        }
+      /* General Styles */
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f7f7f7;
+        color: #333;
+        text-align: center;
+      }
 
-        /* Navigation Bar */
-        nav {
-            background-color: #333;
-            padding: 15px 0;
-            margin-bottom: 30px;
-        }
+      /* Navigation Bar */
+      nav {
+        background-color: #232f3e; /* Amazon's dark blue */
+        padding: 15px 0;
+        margin-bottom: 30px;
+      }
 
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
 
-        nav ul li {
-            margin: 0 15px;
-        }
+      nav ul li {
+        margin: 0 15px;
+      }
 
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.1em;
-            transition: color 0.3s ease;
-        }
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.1em;
+        transition: color 0.3s ease;
+      }
 
-        nav ul li a:hover {
-            color: #ff9900;
-        }
+      nav ul li a:hover {
+        color: #ff9900; /* Amazon's orange */
+      }
 
-        /* Container for Content */
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+      /* Container for Content */
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border: 1px solid #ddd; /* Light border for a clean look */
+      }
 
-        /* Header Styles */
-        h1 {
-            color: #ff9900;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
+      /* Header Styles */
+      h1 {
+        color: #232f3e; /* Amazon's dark blue */
+        font-size: 2.5em;
+        margin-bottom: 20px;
+      }
 
-        /* Paragraph Styles */
-        p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
+      /* Paragraph Styles */
+      p {
+        font-size: 1.2em;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        color: #555; /* Slightly darker text for better readability */
+      }
 
-        /* Call-to-Action Button */
-        .cta-button {
-            display: inline-block;
-            padding: 15px 30px;
-            font-size: 1.2em;
-            color: #fff;
-            background-color: #ff9900;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
+      /* Call-to-Action Button */
+      .cta-button {
+        display: inline-block;
+        padding: 15px 30px;
+        font-size: 1.2em;
+        color: #fff;
+        background-color: #ff9900; /* Amazon's orange */
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
 
-        .cta-button:hover {
-            background-color: #e68a00;
-        }
+      .cta-button:hover {
+        background-color: #e68a00; /* Darker orange on hover */
+      }
 
-        /* Benefits Section */
-        .benefits {
-            text-align: left;
-            margin-top: 30px;
-        }
+      /* Benefits Section */
+      .benefits {
+        text-align: left;
+        margin-top: 30px;
+      }
 
-        .benefits h2 {
-            color: #ff9900;
-            font-size: 1.8em;
-            margin-bottom: 15px;
-        }
+      .benefits h2 {
+        color: #232f3e; /* Amazon's dark blue */
+        font-size: 1.8em;
+        margin-bottom: 15px;
+      }
 
-        .benefits ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
+      .benefits ul {
+        list-style-type: disc;
+        padding-left: 20px;
+      }
 
-        .benefits li {
-            font-size: 1.1em;
-            margin-bottom: 10px;
-        }
+      .benefits li {
+        font-size: 1.1em;
+        margin-bottom: 10px;
+        color: #555; /* Slightly darker text for better readability */
+      }
 
-        /* Footer Styles */
-        footer {
-            margin-top: 40px;
-            padding: 20px;
-            background-color: #333;
-            color: #fff;
-            font-size: 0.9em;
-        }
+      /* Footer Styles */
+      footer {
+        margin-top: 40px;
+        padding: 20px;
+        background-color: #232f3e; /* Amazon's dark blue */
+        color: #fff;
+        font-size: 0.9em;
+      }
 
-        footer a {
-            color: #ff9900;
-            text-decoration: none;
-        }
+      footer a {
+        color: #ff9900; /* Amazon's orange */
+        text-decoration: none;
+      }
 
-        footer a:hover {
-            text-decoration: underline;
-        }
+      footer a:hover {
+        text-decoration: underline;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navigation Bar -->
     <nav>
-        <ul>
-            <li><a href="#prime">Amazon Prime</a></li>
-            <li><a href="#music">Amazon Music</a></li>
-            <li><a href="#video">Prime Video</a></li>
-        </ul>
+      <ul>
+        <li><a href="#prime">Amazon Prime</a></li>
+        <li><a href="#music">Amazon Music</a></li>
+        <li><a href="#video">Prime Video</a></li>
+      </ul>
     </nav>
 
     <!-- Amazon Prime Section -->
     <div id="prime" class="container">
-        <h1>Try Amazon Prime FREE for 30 Days!</h1>
-        <p>Enjoy fast, free delivery, exclusive deals, and unlimited streaming of movies and TV shows. Sign up today and experience the benefits of Amazon Prime.</p>
-        <a href="https://www.amazon.co.uk/tryprimefree?tag=digitalhel00c-21" class="cta-button" target="_blank">Start Your Free Trial</a>
+      <h1>Try Amazon Prime FREE for 30 Days!</h1>
+      <p>
+        Enjoy fast, free delivery, exclusive deals, and unlimited streaming of
+        movies and TV shows. Sign up today and experience the benefits of Amazon
+        Prime.
+      </p>
+      <a
+        href="https://www.amazon.co.uk/tryprimefree?tag=digitalhel00c-21"
+        class="cta-button"
+        target="_blank"
+        >Start Your Free Trial</a
+      >
 
-        <div class="benefits">
-            <h2>Why Try Amazon Prime?</h2>
-            <ul>
-                <li><strong>FREE One-Day Delivery:</strong> Get your orders delivered quickly and without extra cost.</li>
-                <li><strong>Exclusive Deals:</strong> Access member-only discounts on thousands of products.</li>
-                <li><strong>Streaming Services:</strong> Watch popular movies, TV shows, and Amazon Originals.</li>
-                <li><strong>Ad-Free Music:</strong> Listen to millions of songs without interruptions.</li>
-                <li><strong>Free Games & Content:</strong> Enjoy free games, books, and more with Prime Gaming and Prime Reading.</li>
-            </ul>
-        </div>
+      <div class="benefits">
+        <h2>Why Try Amazon Prime?</h2>
+        <ul>
+          <li>
+            <strong>FREE One-Day Delivery:</strong> Get your orders delivered
+            quickly and without extra cost.
+          </li>
+          <li>
+            <strong>Exclusive Deals:</strong> Access member-only discounts on
+            thousands of products.
+          </li>
+          <li>
+            <strong>Streaming Services:</strong> Watch popular movies, TV shows,
+            and Amazon Originals.
+          </li>
+          <li>
+            <strong>Ad-Free Music:</strong> Listen to millions of songs without
+            interruptions.
+          </li>
+          <li>
+            <strong>Free Games & Content:</strong> Enjoy free games, books, and
+            more with Prime Gaming and Prime Reading.
+          </li>
+        </ul>
+      </div>
 
-        <p>Don’t miss out on these amazing benefits. Click the button below to start your free trial today!</p>
-        <a href="https://www.amazon.co.uk/tryprimefree?tag=digitalhel00c-21" class="cta-button" target="_blank">Try Prime Free</a>
+      <p>
+        Don’t miss out on these amazing benefits. Click the button below to
+        start your free trial today!
+      </p>
+      <a
+        href="https://www.amazon.co.uk/tryprimefree?tag=digitalhel00c-21"
+        class="cta-button"
+        target="_blank"
+        >Try Prime Free</a
+      >
     </div>
 
     <!-- Amazon Music Unlimited Section -->
-    <div id="music" class="container" style="margin-top: 50px;">
-        <h1>Try Amazon Music Unlimited FREE!</h1>
-        <p>Stream over 75 million songs ad-free, download your favorites, and enjoy exclusive playlists. Sign up today and experience the best in music streaming.</p>
-        <a href="https://www.amazon.co.uk/music/unlimited?tag=digitalhel00c-21" class="cta-button" target="_blank">Start Your Free Trial</a>
+    <div id="music" class="container" style="margin-top: 50px">
+      <h1>Try Amazon Music Unlimited FREE!</h1>
+      <p>
+        Stream over 75 million songs ad-free, download your favorites, and enjoy
+        exclusive playlists. Sign up today and experience the best in music
+        streaming.
+      </p>
+      <a
+        href="https://www.amazon.co.uk/music/unlimited?tag=digitalhel00c-21"
+        class="cta-button"
+        target="_blank"
+        >Start Your Free Trial</a
+      >
 
-        <div class="benefits">
-            <h2>Why Try Amazon Music Unlimited?</h2>
-            <ul>
-                <li><strong>75 Million Songs:</strong> Access a vast library of music from all genres.</li>
-                <li><strong>Ad-Free Listening:</strong> Enjoy uninterrupted music without ads.</li>
-                <li><strong>Offline Downloads:</strong> Download songs and listen offline.</li>
-                <li><strong>Exclusive Playlists:</strong> Discover curated playlists and personalized recommendations.</li>
-                <li><strong>High-Quality Audio:</strong> Experience superior sound quality.</li>
-            </ul>
-        </div>
+      <div class="benefits">
+        <h2>Why Try Amazon Music Unlimited?</h2>
+        <ul>
+          <li>
+            <strong>75 Million Songs:</strong> Access a vast library of music
+            from all genres.
+          </li>
+          <li>
+            <strong>Ad-Free Listening:</strong> Enjoy uninterrupted music
+            without ads.
+          </li>
+          <li>
+            <strong>Offline Downloads:</strong> Download songs and listen
+            offline.
+          </li>
+          <li>
+            <strong>Exclusive Playlists:</strong> Discover curated playlists and
+            personalized recommendations.
+          </li>
+          <li>
+            <strong>High-Quality Audio:</strong> Experience superior sound
+            quality.
+          </li>
+        </ul>
+      </div>
 
-        <p>Don’t miss out on these amazing benefits. Click the button below to start your free trial today!</p>
-        <a href="https://www.amazon.co.uk/music/unlimited?tag=digitalhel00c-21" class="cta-button" target="_blank">Try Music Unlimited Free</a>
+      <p>
+        Don’t miss out on these amazing benefits. Click the button below to
+        start your free trial today!
+      </p>
+      <a
+        href="https://www.amazon.co.uk/music/unlimited?tag=digitalhel00c-21"
+        class="cta-button"
+        target="_blank"
+        >Try Music Unlimited Free</a
+      >
     </div>
 
     <!-- Amazon Prime Video Section -->
-    <div id="video" class="container" style="margin-top: 50px;">
-        <h1>Try Amazon Prime Video FREE!</h1>
-        <p>Stream thousands of movies, TV shows, and Amazon Originals. Sign up today and enjoy unlimited entertainment.</p>
-        <a href="https://www.amazon.co.uk/channels?tag=digitalhel00c-21" class="cta-button" target="_blank">Start Your Free Trial</a>
+    <div id="video" class="container" style="margin-top: 50px">
+      <h1>Try Amazon Prime Video FREE!</h1>
+      <p>
+        Stream thousands of movies, TV shows, and Amazon Originals. Sign up
+        today and enjoy unlimited entertainment.
+      </p>
+      <a
+        href="https://www.amazon.co.uk/channels?tag=digitalhel00c-21"
+        class="cta-button"
+        target="_blank"
+        >Start Your Free Trial</a
+      >
 
-        <div class="benefits">
-            <h2>Why Try Amazon Prime Video?</h2>
-            <ul>
-                <li><strong>Thousands of Titles:</strong> Access a vast library of movies and TV shows.</li>
-                <li><strong>Amazon Originals:</strong> Watch exclusive shows and movies you can't find anywhere else.</li>
-                <li><strong>Offline Downloads:</strong> Download your favorites and watch offline.</li>
-                <li><strong>Multiple Devices:</strong> Stream on your TV, phone, tablet, or computer.</li>
-                <li><strong>Ad-Free Streaming:</strong> Enjoy uninterrupted entertainment.</li>
-            </ul>
-        </div>
+      <div class="benefits">
+        <h2>Why Try Amazon Prime Video?</h2>
+        <ul>
+          <li>
+            <strong>Thousands of Titles:</strong> Access a vast library of
+            movies and TV shows.
+          </li>
+          <li>
+            <strong>Amazon Originals:</strong> Watch exclusive shows and movies
+            you can't find anywhere else.
+          </li>
+          <li>
+            <strong>Offline Downloads:</strong> Download your favorites and
+            watch offline.
+          </li>
+          <li>
+            <strong>Multiple Devices:</strong> Stream on your TV, phone, tablet,
+            or computer.
+          </li>
+          <li>
+            <strong>Ad-Free Streaming:</strong> Enjoy uninterrupted
+            entertainment.
+          </li>
+        </ul>
+      </div>
 
-        <p>Don’t miss out on these amazing benefits. Click the button below to start your free trial today!</p>
-        <a href="https://www.amazon.co.uk/channels?tag=digitalhel00c-21" class="cta-button" target="_blank">Try Prime Video Free</a>
+      <p>
+        Don’t miss out on these amazing benefits. Click the button below to
+        start your free trial today!
+      </p>
+      <a
+        href="https://www.amazon.co.uk/channels?tag=digitalhel00c-21"
+        class="cta-button"
+        target="_blank"
+        >Try Prime Video Free</a
+      >
     </div>
 
     <!-- Footer -->
     <footer>
-        <p>© 2024 Your Website Name. All rights reserved. | 
-            <a href="https://www.amazon.co.uk/tryprimefree?tag=digitalhel00c-21" target="_blank">Try Amazon Prime</a> | 
-            <a href="https://www.amazon.co.uk/music/unlimited?tag=digitalhel00c-21" target="_blank">Try Amazon Music Unlimited</a> | 
-            <a href="https://www.amazon.co.uk/channels?tag=digitalhel00c-21" target="_blank">Try Prime Video</a>
-        </p>
+      <p>
+        © 2024 Nav Digital. All rights reserved. |
+        <a
+          href="https://www.amazon.co.uk/tryprimefree?tag=digitalhel00c-21"
+          target="_blank"
+          >Try Amazon Prime</a
+        >
+        |
+        <a
+          href="https://www.amazon.co.uk/music/unlimited?tag=digitalhel00c-21"
+          target="_blank"
+          >Try Amazon Music Unlimited</a
+        >
+        |
+        <a
+          href="https://www.amazon.co.uk/channels?tag=digitalhel00c-21"
+          target="_blank"
+          >Try Prime Video</a
+        >
+      </p>
     </footer>
 
     <script>
-        // Simple JavaScript to add interactivity
-        const ctaButtons = document.querySelectorAll('.cta-button');
-        ctaButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                alert('Thank you for signing up! Enjoy your free trial.');
-            });
+      // Simple JavaScript to add interactivity
+      const ctaButtons = document.querySelectorAll(".cta-button");
+      ctaButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          alert("Thank you for signing up! Enjoy your free trial.");
         });
+      });
     </script>
-</body>
+  </body>
 </html>
