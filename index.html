@@ -28,16 +28,17 @@
             padding: 0;
             display: flex;
             justify-content: center;
+            flex-wrap: wrap; /* Allow navigation items to wrap on smaller screens */
         }
 
         nav ul li {
-            margin: 0 15px;
+            margin: 10px 15px; /* Add spacing between navigation items */
         }
 
         nav ul li a {
             color: #fff;
             text-decoration: none;
-            font-size: 1.1em;
+            font-size: 1em; /* Smaller font size for mobile */
             transition: color 0.3s ease;
         }
 
@@ -47,8 +48,8 @@
 
         /* Container for Content */
         .container {
-            max-width: 800px;
-            margin: 0 auto;
+            max-width: 90%; /* Take up more screen width on mobile */
+            margin: 20px auto;
             padding: 20px;
             background-color: #fff;
             border-radius: 10px;
@@ -59,13 +60,13 @@
         /* Header Styles */
         h1 {
             color: #232f3e; /* Amazon's dark blue */
-            font-size: 2.5em;
+            font-size: 2em; /* Smaller font size for mobile */
             margin-bottom: 20px;
         }
 
         /* Paragraph Styles */
         p {
-            font-size: 1.2em;
+            font-size: 1em; /* Smaller font size for mobile */
             line-height: 1.6;
             margin-bottom: 20px;
             color: #555; /* Slightly darker text for better readability */
@@ -74,8 +75,8 @@
         /* Call-to-Action Button */
         .cta-button {
             display: inline-block;
-            padding: 15px 30px;
-            font-size: 1.2em;
+            padding: 12px 24px; /* Smaller padding for mobile */
+            font-size: 1em; /* Smaller font size for mobile */
             color: #fff;
             background-color: #ff9900; /* Amazon's orange */
             text-decoration: none;
@@ -95,7 +96,7 @@
 
         .benefits h2 {
             color: #232f3e; /* Amazon's dark blue */
-            font-size: 1.8em;
+            font-size: 1.5em; /* Smaller font size for mobile */
             margin-bottom: 15px;
         }
 
@@ -105,7 +106,7 @@
         }
 
         .benefits li {
-            font-size: 1.1em;
+            font-size: 1em; /* Smaller font size for mobile */
             margin-bottom: 10px;
             color: #555; /* Slightly darker text for better readability */
         }
@@ -126,6 +127,38 @@
 
         footer a:hover {
             text-decoration: underline;
+        }
+
+        /* Media Queries for Mobile Optimization */
+        @media (max-width: 600px) {
+            nav ul li {
+                margin: 8px 10px; /* Smaller margin for mobile */
+            }
+
+            .container {
+                padding: 15px; /* Smaller padding for mobile */
+            }
+
+            h1 {
+                font-size: 1.8em; /* Smaller font size for mobile */
+            }
+
+            p {
+                font-size: 0.9em; /* Smaller font size for mobile */
+            }
+
+            .cta-button {
+                padding: 10px 20px; /* Smaller padding for mobile */
+                font-size: 0.9em; /* Smaller font size for mobile */
+            }
+
+            .benefits h2 {
+                font-size: 1.3em; /* Smaller font size for mobile */
+            }
+
+            .benefits li {
+                font-size: 0.9em; /* Smaller font size for mobile */
+            }
         }
     </style>
 </head>
@@ -232,7 +265,7 @@
     </div>
 
     <!-- Amazon Music Unlimited Section -->
-    <div id="music" class="container" style="margin-top: 50px">
+    <div id="music" class="container">
         <h1>Try Amazon Music Unlimited FREE!</h1>
         <p>
             Stream over 75 million songs ad-free, download your favorites, and enjoy exclusive playlists. Sign up today and experience the best in music streaming.
@@ -257,7 +290,7 @@
     </div>
 
     <!-- Amazon Prime Video Section -->
-    <div id="video" class="container" style="margin-top: 50px">
+    <div id="video" class="container">
         <h1>Try Amazon Prime Video FREE!</h1>
         <p>
             Stream thousands of movies, TV shows, and Amazon Originals. Sign up today and enjoy unlimited entertainment.
