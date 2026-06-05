@@ -1,489 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Try Amazon Prime, Music Unlimited & Prime Video</title>
-    <style>
-      /* General Styles */
-      body {
-        font-family: "Arial", sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f7f7f7;
-        color: #333;
-        text-align: center;
-      }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier Property Solutions | Guaranteed Rent & Property Management</title>
+    <!-- Tailwind CSS for modern, professional styling -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome for professional icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
 
-      /* Navigation Bar */
-      nav {
-        background-color: #232f3e; /* Amazon's dark blue */
-        padding: 15px 0;
-        margin-bottom: 30px;
-      }
+    <!-- Header / Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-building-shield text-blue-600 text-3xl"></i>
+                <span class="text-xl font-bold text-gray-900 tracking-tight">PREMIER<span class="text-blue-600">PROPERTY</span></span>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-medium text-gray-600">
+                <a href="#benefits" class="hover:text-blue-600 transition">Benefits</a>
+                <a href="#how-it-works" class="hover:text-blue-600 transition">How It Works</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Contact Us</a>
+            </nav>
+            <div class="hidden sm:block">
+                <a href="tel:07414825448" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg font-semibold transition shadow-sm">
+                    <i class="fa-solid fa-phone mr-2"></i>07414 825448
+                </a>
+            </div>
+        </div>
+    </header>
 
-      nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap; /* Allow navigation items to wrap on smaller screens */
-      }
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r compression from-slate-900 to-blue-950 text-white py-20 lg:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm font-semibold tracking-wide uppercase">Corporate Housing & Property Management</span>
+                <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight">
+                    Guaranteed Rent. Zero Hassle. Perfect Tenants.
+                </h1>
+                <p class="text-lg text-slate-300 leading-relaxed">
+                    We sign long-term contract agreements with landlords, taking on the full management of your property. Enjoy 100% hands-off passive income while we source, vet, and manage high-quality tenants.
+                </p>
+                <div class="pt-4 flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-bold text-center transition shadow-lg">
+                        Get Your Free Rent Proposal
+                    </a>
+                    <a href="mailto:navsinghdigital@gmail.com" class="bg-transparent border border-slate-400 hover:border-white text-white px-8 py-4 rounded-lg font-bold text-center transition">
+                        Email Our Team
+                    </a>
+                </div>
+            </div>
+            <div class="hidden md:block bg-slate-800/50 p-8 rounded-2xl border border-slate-700 shadow-2xl backdrop-blur-sm">
+                <h3 class="text-xl font-bold mb-4 text-blue-400">Why Corporate Landlords Choose Us:</h3>
+                <ul class="space-y-4">
+                    <li class="flex items-start"><i class="fa-solid fa-check-circle text-emerald-400 mt-1 mr-3 text-lg"></i> <span><strong>3 to 5 Year Contracts:</strong> Long-term stability and absolute peace of mind.</span></li>
+                    <li class="flex items-start"><i class="fa-solid fa-check-circle text-emerald-400 mt-1 mr-3 text-lg"></i> <span><strong>Zero Void Periods:</strong> You get paid every month, even if the property is empty.</span></li>
+                    <li class="flex items-start"><i class="fa-solid fa-check-circle text-emerald-400 mt-1 mr-3 text-lg"></i> <span><strong>Maintenance Covered:</strong> We handle minor repairs and weekly cleaning at our expense.</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-      nav ul li {
-        margin: 10px 15px; /* Add spacing between navigation items */
-      }
+    <!-- Value Proposition / Benefits -->
+    <section id="benefits" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl">What We Offer Landlords</h2>
+                <p class="mt-4 text-lg text-gray-600">We bridge the gap between premium tenants and landlords looking for a completely hands-off investment.</p>
+            </div>
 
-      nav ul li a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 1em; /* Smaller font size for mobile */
-        transition: color 0.3s ease;
-      }
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Benefit 1 -->
+                <div class="p-8 rounded-xl bg-gray-50 border border-gray-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6 text-xl">
+                        <i class="fa-solid fa-file-contract"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Guaranteed Legal Contracts</h3>
+                    <p class="text-gray-600 leading-relaxed">We enter into a formal, legal commercial agreement with you. Your monthly rent is guaranteed for the entire duration of the term.</p>
+                </div>
+                <!-- Benefit 2 -->
+                <div class="p-8 rounded-xl bg-gray-50 border border-gray-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6 text-xl">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Rigorous Tenant Sourcing</h3>
+                    <p class="text-gray-600 leading-relaxed">We find, reference, and manage professional tenants. We deal with all tenant queries, deposits, and references so you don't have to.</p>
+                </div>
+                <!-- Benefit 3 -->
+                <div class="p-8 rounded-xl bg-gray-50 border border-gray-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6 text-xl">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Property Upkeep Included</h3>
+                    <p class="text-gray-600 leading-relaxed">Your property is kept in pristine, show-home condition. We arrange regular cleaning, inspections, and cover minor maintenance costs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      nav ul li a:hover {
-        color: #ff9900; /* Amazon's orange */
-      }
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-20 bg-gray-50 border-t border-b border-gray-200/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl">Our 3-Step Simple Process</h2>
+                <p class="mt-4 text-lg text-gray-600">Getting started is completely seamless. Here is how we secure your income:</p>
+            </div>
 
-      /* Container for Content */
-      .container {
-        max-width: 90%; /* Take up more screen width on mobile */
-        margin: 20px auto;
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        border: 1px solid #ddd; /* Light border for a clean look */
-      }
+            <div class="grid md:grid-cols-3 gap-8 relative">
+                <div class="text-center p-4">
+                    <div class="text-4xl font-extrabold text-blue-200 mb-2">01</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Property Valuation & View</h3>
+                    <p class="text-gray-600">We inspect your property and provide a competitive, guaranteed monthly rent offer within 24 hours.</p>
+                </div>
+                <div class="text-center p-4">
+                    <div class="text-4xl font-extrabold text-blue-200 mb-2">02</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Sign Contract Agreement</h3>
+                    <p class="text-gray-600">We sign a flexible 3-5 year corporate agreement. No hidden agency fees, no commissions.</p>
+                </div>
+                <div class="text-center p-4">
+                    <div class="text-4xl font-extrabold text-blue-200 mb-2">03</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Relax & Collect Rent</h3>
+                    <p class="text-gray-600">We source premium tenants and manage everything. Sit back and watch the rent arrive every month.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      /* Header Styles */
-      h1 {
-        color: #232f3e; /* Amazon's dark blue */
-        font-size: 2em; /* Smaller font size for mobile */
-        margin-bottom: 20px;
-      }
+    <!-- Contact / Lead Capture Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-900 text-white rounded-2xl p-8 md:p-12 shadow-xl">
+                <div class="text-center max-w-2xl mx-auto mb-10">
+                    <h2 class="text-3xl font-bold">Let's Secure Your Rental Income</h2>
+                    <p class="mt-3 text-slate-400">Get in touch today for a free assessment of your property and a no-obligation contract offer.</p>
+                </div>
 
-      /* Paragraph Styles */
-      p {
-        font-size: 1em; /* Smaller font size for mobile */
-        line-height: 1.6;
-        margin-bottom: 20px;
-        color: #555; /* Slightly darker text for better readability */
-      }
+                <!-- Direct Contact Details to build massive trust -->
+                <div class="grid sm:grid-cols-2 gap-6 mb-10 border-b border-slate-800 pb-8 text-center sm:text-left">
+                    <div class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4">
+                        <div class="w-12 h-12 bg-blue-600/20 text-blue-400 rounded-full flex items-center justify-center text-lg shrink-0">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <span class="block text-xs uppercase text-slate-400 font-semibold tracking-wider">Email Us Directly</span>
+                            <a href="mailto:navsinghdigital@gmail.com" class="text-lg font-medium text-white hover:text-blue-400 transition break-all">navsinghdigital@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4">
+                        <div class="w-12 h-12 bg-blue-600/20 text-blue-400 rounded-full flex items-center justify-center text-lg shrink-0">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <span class="block text-xs uppercase text-slate-400 font-semibold tracking-wider">Call or WhatsApp</span>
+                            <a href="tel:07414825448" class="text-lg font-medium text-white hover:text-blue-400 transition">07414 825448</a>
+                        </div>
+                    </div>
+                </div>
 
-      /* Call-to-Action Button */
-      .cta-button {
-        display: inline-block;
-        padding: 12px 24px; /* Smaller padding for mobile */
-        font-size: 1em; /* Smaller font size for mobile */
-        color: #fff;
-        background-color: #ff9900; /* Amazon's orange */
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-      }
-
-      .cta-button:hover {
-        background-color: #e68a00; /* Darker orange on hover */
-      }
-
-      /* Benefits Section */
-      .benefits {
-        text-align: left;
-        margin-top: 30px;
-      }
-
-      .benefits h2 {
-        color: #232f3e; /* Amazon's dark blue */
-        font-size: 1.5em; /* Smaller font size for mobile */
-        margin-bottom: 15px;
-      }
-
-      .benefits ul {
-        list-style-type: disc;
-        padding-left: 20px;
-      }
-
-      .benefits li {
-        font-size: 1em; /* Smaller font size for mobile */
-        margin-bottom: 10px;
-        color: #555; /* Slightly darker text for better readability */
-      }
-
-      /* Footer Styles */
-      footer {
-        margin-top: 40px;
-        padding: 20px;
-        background-color: #232f3e; /* Amazon's dark blue */
-        color: #fff;
-        font-size: 0.9em;
-      }
-
-      footer a {
-        color: #ff9900; /* Amazon's orange */
-        text-decoration: none;
-      }
-
-      footer a:hover {
-        text-decoration: underline;
-      }
-
-      /* Media Queries for Mobile Optimization */
-      @media (max-width: 600px) {
-        nav ul li {
-          margin: 8px 10px; /* Smaller margin for mobile */
-        }
-
-        .container {
-          padding: 15px; /* Smaller padding for mobile */
-        }
-
-        h1 {
-          font-size: 1.8em; /* Smaller font size for mobile */
-        }
-
-        p {
-          font-size: 0.9em; /* Smaller font size for mobile */
-        }
-
-        .cta-button {
-          padding: 10px 20px; /* Smaller padding for mobile */
-          font-size: 0.9em; /* Smaller font size for mobile */
-        }
-
-        .benefits h2 {
-          font-size: 1.3em; /* Smaller font size for mobile */
-        }
-
-        .benefits li {
-          font-size: 0.9em; /* Smaller font size for mobile */
-        }
-      }
-    </style>
-
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-MVTL46F");
-    </script>
-    <!-- End Google Tag Manager -->
-  </head>
-  <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-MVTL46F"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-    <!-- Navigation Bar -->
-    <nav>
-      <ul>
-        <li><a href="#why-prime">Why Choose Prime?</a></li>
-        <li><a href="#prime">Amazon Prime</a></li>
-        <li><a href="#music">Amazon Music</a></li>
-        <li><a href="#video">Prime Video</a></li>
-      </ul>
-    </nav>
-
-    <!-- Why Choose Prime Section -->
-    <div id="why-prime" class="container">
-      <h1>Why Choose Amazon Prime?</h1>
-      <p>
-        Amazon Prime is more than just fast shipping. It’s a membership program
-        that offers a wide range of benefits designed to make your life easier,
-        more convenient, and more enjoyable. Here’s why you should sign up for
-        the free trial:
-      </p>
-
-      <div class="benefits">
-        <h2>What is Amazon Prime?</h2>
-        <p>
-          Amazon Prime is a subscription service that provides members with
-          access to a variety of perks, including fast shipping, exclusive
-          deals, streaming services, and more. It’s designed to enhance your
-          shopping and entertainment experience.
-        </p>
-
-        <h2>Key Benefits of Amazon Prime</h2>
-        <ul>
-          <li>
-            <strong>Fast, FREE Delivery:</strong> Get unlimited FREE one-day or
-            two-day delivery on millions of eligible items. No minimum purchase
-            required.
-          </li>
-          <li>
-            <strong>Exclusive Deals and Discounts:</strong> Access member-only
-            deals, including Prime Day, Lightning Deals, and early access to
-            sales.
-          </li>
-          <li>
-            <strong>Prime Video:</strong> Stream thousands of movies, TV shows,
-            and Amazon Originals, including award-winning content like
-            <em>The Marvelous Mrs. Maisel</em> and <em>The Boys</em>.
-          </li>
-          <li>
-            <strong>Prime Music:</strong> Listen to over 2 million songs ad-free
-            and thousands of playlists and stations.
-          </li>
-          <li>
-            <strong>Prime Reading:</strong> Enjoy unlimited access to a rotating
-            selection of eBooks, magazines, and comics.
-          </li>
-          <li>
-            <strong>Prime Gaming:</strong> Get free games, in-game content, and
-            a free Twitch channel subscription every month.
-          </li>
-          <li>
-            <strong>Amazon Photos:</strong> Store and share unlimited photos
-            with free cloud storage.
-          </li>
-        </ul>
-      </div>
-
-      <div class="benefits">
-        <h2>Why Try the Free Trial?</h2>
-        <p>
-          The Amazon Prime free trial gives you full access to all these
-          benefits for <strong>30 days</strong>. It’s the perfect way to
-          experience everything Prime has to offer without any commitment.
-          Here’s why you should try it:
-        </p>
-        <ul>
-          <li>
-            <strong>No Risk:</strong> Cancel anytime during the trial period,
-            and you won’t be charged.
-          </li>
-          <li>
-            <strong>Instant Access:</strong> Start enjoying benefits like fast
-            shipping and streaming right away.
-          </li>
-          <li>
-            <strong>Exclusive Perks:</strong> Take advantage of member-only
-            deals and discounts during your trial.
-          </li>
-          <li>
-            <strong>Convenience:</strong> Simplify your life with faster
-            deliveries and access to entertainment on demand.
-          </li>
-        </ul>
-      </div>
-
-      <p>
-        Ready to experience the benefits of Amazon Prime? Click the button below
-        to start your free trial today!
-      </p>
-      <a
-        href="https://www.amazon.co.uk/tryprimefree?tag=digitalhel00c-21"
-        class="cta-button"
-        target="_blank"
-        >Start Your Free Trial</a
-      >
-    </div>
-
-    <!-- Amazon Prime Section -->
-    <div id="prime" class="container">
-      <h1>Try Amazon Prime FREE for 30 Days!</h1>
-      <p>
-        Enjoy fast, free delivery, exclusive deals, and unlimited streaming of
-        movies and TV shows. Sign up today and experience the benefits of Amazon
-        Prime.
-      </p>
-      <a
-        href="https://www.amazon.co.uk/tryprimefree?tag=digitalhel00c-21"
-        class="cta-button"
-        target="_blank"
-        >Start Your Free Trial</a
-      >
-
-      <div class="benefits">
-        <h2>Why Try Amazon Prime?</h2>
-        <ul>
-          <li>
-            <strong>FREE One-Day Delivery:</strong> Get your orders delivered
-            quickly and without extra cost.
-          </li>
-          <li>
-            <strong>Exclusive Deals:</strong> Access member-only discounts on
-            thousands of products.
-          </li>
-          <li>
-            <strong>Streaming Services:</strong> Watch popular movies, TV shows,
-            and Amazon Originals.
-          </li>
-          <li>
-            <strong>Ad-Free Music:</strong> Listen to millions of songs without
-            interruptions.
-          </li>
-          <li>
-            <strong>Free Games & Content:</strong> Enjoy free games, books, and
-            more with Prime Gaming and Prime Reading.
-          </li>
-        </ul>
-      </div>
-
-      <p>
-        Don’t miss out on these amazing benefits. Click the button below to
-        start your free trial today!
-      </p>
-      <a
-        href="https://www.amazon.co.uk/tryprimefree?tag=digitalhel00c-21"
-        class="cta-button"
-        target="_blank"
-        >Try Prime Free</a
-      >
-    </div>
-
-    <!-- Amazon Music Unlimited Section -->
-    <div id="music" class="container">
-      <h1>Try Amazon Music Unlimited FREE!</h1>
-      <p>
-        Stream over 75 million songs ad-free, download your favorites, and enjoy
-        exclusive playlists. Sign up today and experience the best in music
-        streaming.
-      </p>
-      <a
-        href="https://www.amazon.co.uk/music/unlimited?tag=digitalhel00c-21"
-        class="cta-button"
-        target="_blank"
-        >Start Your Free Trial</a
-      >
-
-      <div class="benefits">
-        <h2>Why Try Amazon Music Unlimited?</h2>
-        <ul>
-          <li>
-            <strong>75 Million Songs:</strong> Access a vast library of music
-            from all genres.
-          </li>
-          <li>
-            <strong>Ad-Free Listening:</strong> Enjoy uninterrupted music
-            without ads.
-          </li>
-          <li>
-            <strong>Offline Downloads:</strong> Download songs and listen
-            offline.
-          </li>
-          <li>
-            <strong>Exclusive Playlists:</strong> Discover curated playlists and
-            personalized recommendations.
-          </li>
-          <li>
-            <strong>High-Quality Audio:</strong> Experience superior sound
-            quality.
-          </li>
-        </ul>
-      </div>
-
-      <p>
-        Don’t miss out on these amazing benefits. Click the button below to
-        start your free trial today!
-      </p>
-      <a
-        href="https://www.amazon.co.uk/music/unlimited?tag=digitalhel00c-21"
-        class="cta-button"
-        target="_blank"
-        >Try Music Unlimited Free</a
-      >
-    </div>
-
-    <!-- Amazon Prime Video Section -->
-    <div id="video" class="container">
-      <h1>Try Amazon Prime Video FREE!</h1>
-      <p>
-        Stream thousands of movies, TV shows, and Amazon Originals. Sign up
-        today and enjoy unlimited entertainment.
-      </p>
-      <a
-        href="https://www.amazon.co.uk/channels?tag=digitalhel00c-21"
-        class="cta-button"
-        target="_blank"
-        >Start Your Free Trial</a
-      >
-
-      <div class="benefits">
-        <h2>Why Try Amazon Prime Video?</h2>
-        <ul>
-          <li>
-            <strong>Thousands of Titles:</strong> Access a vast library of
-            movies and TV shows.
-          </li>
-          <li>
-            <strong>Amazon Originals:</strong> Watch exclusive shows and movies
-            you can't find anywhere else.
-          </li>
-          <li>
-            <strong>Offline Downloads:</strong> Download your favorites and
-            watch offline.
-          </li>
-          <li>
-            <strong>Multiple Devices:</strong> Stream on your TV, phone, tablet,
-            or computer.
-          </li>
-          <li>
-            <strong>Ad-Free Streaming:</strong> Enjoy uninterrupted
-            entertainment.
-          </li>
-        </ul>
-      </div>
-
-      <p>
-        Don’t miss out on these amazing benefits. Click the button below to
-        start your free trial today!
-      </p>
-      <a
-        href="https://www.amazon.co.uk/channels?tag=digitalhel00c-21"
-        class="cta-button"
-        target="_blank"
-        >Try Prime Video Free</a
-      >
-    </div>
+                <!-- Email Form: Submits directly via user's email client -->
+                <form action="mailto:navsinghdigital@gmail.com" method="GET" enctype="text/plain" class="space-y-4 text-gray-900">
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-300 mb-1">Your Name</label>
+                            <input type="text" name="subject" placeholder="John Doe" required class="w-full bg-white px-4 py-3 rounded-lg border border-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-300 mb-1">Property Postcode / Location</label>
+                            <input type="text" name="body" placeholder="e.g. London, W1" required class="w-full bg-white px-4 py-3 rounded-lg border border-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                    </div>
+                    <div class="text-center pt-2">
+                        <button type="submit" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-4 rounded-lg transition shadow-md cursor-pointer">
+                            <i class="fa-solid fa-paper-plane mr-2"></i> Click to Email Us Now
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer>
-      <p>
-        © 2024 Nav Digital. All rights reserved. |
-        <a
-          href="https://www.amazon.co.uk/tryprimefree?tag=digitalhel00c-21"
-          target="_blank"
-          >Try Amazon Prime</a
-        >
-        |
-        <a
-          href="https://www.amazon.co.uk/music/unlimited?tag=digitalhel00c-21"
-          target="_blank"
-          >Try Amazon Music Unlimited</a
-        >
-        |
-        <a
-          href="https://www.amazon.co.uk/channels?tag=digitalhel00c-21"
-          target="_blank"
-          >Try Prime Video</a
-        >
-      </p>
+    <footer class="bg-gray-900 text-gray-400 py-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between text-sm">
+            <p>&copy; 2026 Premier Property Solutions. All rights reserved.</p>
+            <p class="mt-2 sm:mt-0">Providing professional Rent-to-Rent contract management.</p>
+        </div>
     </footer>
 
-    <script>
-      // Simple JavaScript to add interactivity
-      const ctaButtons = document.querySelectorAll(".cta-button");
-      ctaButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-          alert("Thank you for signing up! Enjoy your free trial.");
-        });
-      });
-    </script>
-  </body>
+</body>
 </html>
