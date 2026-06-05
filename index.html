@@ -158,7 +158,7 @@
                     </div>
                 </div>
 
-                <!-- Email Trigger: Opens user's email client directly without security warnings -->
+                <!-- Email Trigger Area -->
                 <div class="space-y-4 text-gray-900">
                     <div class="grid sm:grid-cols-2 gap-4">
                         <div>
@@ -171,8 +171,8 @@
                         </div>
                     </div>
                     <div class="text-center pt-2">
-                        <button onclick="sendProspectEmail()" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-4 rounded-lg transition shadow-md cursor-pointer">
-                            <i class="fa-solid fa-paper-plane mr-2"></i> Click to Email Us Now
+                        <button id="submit-btn" onclick="sendProspectEmail()" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-4 rounded-lg transition shadow-md cursor-pointer flex items-center justify-center mx-auto">
+                            <span id="btn-text"><i class="fa-solid fa-paper-plane mr-2"></i> Click to Email Us Now</span>
                         </button>
                     </div>
                 </div>
@@ -189,17 +189,38 @@
         </div>
     </footer>
 
-    <!-- JavaScript to handle safe mail client handoffs -->
+    <!-- JavaScript Fallback Integration -->
     <script>
     function sendProspectEmail() {
         const name = document.getElementById('landlord-name').value || 'Landlord';
         const location = document.getElementById('property-location').value || 'Not Specified';
-        
         const emailTo = 'navsinghdigital@gmail.com';
+        
         const subject = encodeURIComponent('Rent-to-Rent Inquiry - ' + name);
         const body = encodeURIComponent('Hi Nav,\n\nI would like to discuss a corporate contract agreement for my property.\n\nName: ' + name + '\nProperty Location/Postcode: ' + location + '\n\nPlease contact me with more information.\n\nKind regards,\n' + name);
         
+        // 1. Try to open native mail app
         window.location.href = `mailto:${emailTo}?subject=${subject}&body=${body}`;
+        
+        // 2. Fallback: Copy email automatically to clipboard in case no desktop app exists
+        navigator.clipboard.writeText(emailTo).then(() => {
+            const btn = document.getElementById('submit-btn');
+            const btnText = document.getElementById('btn-text');
+            
+            // Turn the button green to show success feedback
+            btn.classList.remove('bg-blue-600', 'hover:bg-blue-700');
+            btn.classList.add('bg-emerald-600');
+            btnText.innerHTML = '<i class="fa-solid fa-check mr-2"></i> Email Copied! Paste into Gmail/Yahoo';
+            
+            // Revert back after 5 seconds
+            setTimeout(() => {
+                btn.classList.remove('bg-emerald-600');
+                btn.classList.add('bg-blue-600', 'hover:bg-blue-700');
+                btnText.innerHTML = '<i class="fa-solid fa-paper-plane mr-2"></i> Click to Email Us Now';
+            }, 5000);
+        }).catch(err => {
+            console.log('Clipboard copy failed fallback alternative active.');
+        });
     }
     </script>
 
